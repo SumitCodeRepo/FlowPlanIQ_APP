@@ -58,7 +58,7 @@ const Team = () => {
                 <div className="max-sm:w-full dark:bg-gradient-to-br dark:from-zinc-800/70 dark:to-zinc-900/50 border border-gray-300 dark:border-zinc-800 rounded-lg p-6">
                     <div className="flex items-center justify-between gap-8 md:gap-22">
                         <div>
-                            <p className="text-sm text-gray-500 dark:text-zinc-400">Active Projects</p>
+                            <p className="text-sm text-gray-500 dark:text-zinc-400">Active Batches</p>
                             <p className="text-xl font-bold text-gray-900 dark:text-white">
                                 {projects.filter((p) => p.status !== "CANCELLED" && p.status !== "COMPLETED").length}
                             </p>

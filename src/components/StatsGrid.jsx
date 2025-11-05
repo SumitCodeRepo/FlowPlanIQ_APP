@@ -18,15 +18,15 @@ export default function StatsGrid() {
     const statCards = [
         {
             icon: FolderOpen,
-            title: "Total Projects",
+            title: "Total Batches",
             value: stats.totalProjects,
-            subtitle: `projects in ${currentWorkspace?.name}`,
+            subtitle: `Batches in ${currentWorkspace?.name}`,
             bgColor: "bg-blue-500/10",
             textColor: "text-blue-500",
         },
         {
             icon: CheckCircle,
-            title: "Completed Projects",
+            title: "Completed Batches",
             value: stats.completedProjects,
             subtitle: `of ${stats.totalProjects} total`,
             bgColor: "bg-emerald-500/10",
