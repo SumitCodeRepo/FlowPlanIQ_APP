@@ -26,8 +26,14 @@ const themeSlice = createSlice({
                 }
             }
         },
+        isDarkTheme: (state) => {
+            const theme = localStorage.getItem("theme");
+            return (theme === "dark");
+        },
     },
 });
 
-export const { toggleTheme, setTheme, loadTheme } = themeSlice.actions;
+export const { toggleTheme, setTheme, loadTheme ,isDarkTheme} = themeSlice.actions;
+
+export const selectIsDarkTheme = (state) => state.theme.theme === "dark";
 export default themeSlice.reducer;
