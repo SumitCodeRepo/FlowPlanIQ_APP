@@ -7,6 +7,7 @@ import Team from "./pages/Team";
 import ProjectDetails from "./pages/ProjectDetails";
 import TaskDetails from "./pages/TaskDetails";
 import Gantt from "./pages/Gantt"
+import ProjectBatchDashboard from './pages/ProjectBatchDashboard'
 
 const App = () => {
     return (
@@ -20,6 +21,8 @@ const App = () => {
                     <Route path="projectsDetail" element={<ProjectDetails />} />
                     <Route path="taskDetails" element={<TaskDetails />} />
                     <Route path="gantt" element={<Gantt />} />
+                    <Route path="ProjectBatchDashboard" element={<ProjectBatchDashboard />} />
+
                 </Route>
             </Routes>
         </>

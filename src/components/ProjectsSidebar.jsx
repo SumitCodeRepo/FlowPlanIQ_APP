@@ -24,6 +24,7 @@ const ProjectSidebar = () => {
         { title: 'gantt', icon: SettingsIcon, url: `/gantt?id=${projectId}&tab=settings` },        
         { title: 'Revnue Planning', icon: SettingsIcon, url: `/projectsDetail?id=${projectId}&tab=settings` },
         { title: 'Resource Planning', icon: SettingsIcon, url: `/projectsDetail?id=${projectId}&tab=settings` },
+        { title: 'Dash', icon: SettingsIcon, url: `/ProjectBatchDashboard?id=${projectId}&tab=settings` },
         
     ];
 

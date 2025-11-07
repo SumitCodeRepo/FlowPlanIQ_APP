@@ -3,7 +3,7 @@ import { UsersIcon, Search, UserPlus, Shield, Activity } from "lucide-react";
 import { useSelector } from "react-redux";
 import InviteMemberDialog from "../components/InviteMemberDialog";
 import { Gantt as GtControl} from "@svar-ui/react-gantt";
-import SVARThemeWrapper from '../features/SVARThemeWrapper'
+  import SVARThemeWrapper from '../features/SVARThemeWrapper'
 import "@svar-ui/react-gantt/all.css";
 
 const Gantt = () => {
@@ -61,7 +61,7 @@ const Gantt = () => {
         { unit: "day", step: 1, format: "d" },
       ];
       
-      const isDark = useSelector(selectIsDarkTheme);
+      
     return (
         <div className="space-y-6 max-w-6xl mx-auto">
 
