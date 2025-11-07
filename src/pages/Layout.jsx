@@ -5,8 +5,10 @@ import { Outlet } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadTheme } from '../features/themeSlice'
 import { Loader2Icon } from 'lucide-react'
+import { useUser, SignIn } from '@clerk/clerk-react'
 
 const Layout = () => {
+    const { user, isLoaded } = useUser()
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
     const { loading } = useSelector((state) => state.workspace)
     const dispatch = useDispatch()
@@ -15,6 +17,15 @@ const Layout = () => {
     useEffect(() => {
         dispatch(loadTheme())
     }, [])
+
+  // Show sign-in if user is not authenticated
+  if (!user) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-gray-100">
+        <SignIn />
+      </div>
+    )
+  }
 
     if (loading) return (
         <div className='flex items-center justify-center h-screen bg-white dark:bg-zinc-950'>
