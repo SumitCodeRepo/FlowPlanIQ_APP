@@ -21,7 +21,7 @@ const ProjectSidebar = () => {
         { title: 'Analytics', icon: ChartColumnIcon, url: `/projectsDetail?id=${projectId}&tab=analytics` },
         { title: 'Calendar', icon: CalendarIcon, url: `/projectsDetail?id=${projectId}&tab=calendar` },
         { title: 'Budget', icon: SettingsIcon, url: `/projectsDetail?id=${projectId}&tab=settings` },
-        { title: 'Resources', icon: SettingsIcon, url: `/projectsDetail?id=${projectId}&tab=settings` },        
+        { title: 'gantt', icon: SettingsIcon, url: `/gantt?id=${projectId}&tab=settings` },        
         { title: 'Revnue Planning', icon: SettingsIcon, url: `/projectsDetail?id=${projectId}&tab=settings` },
         { title: 'Resource Planning', icon: SettingsIcon, url: `/projectsDetail?id=${projectId}&tab=settings` },
         
