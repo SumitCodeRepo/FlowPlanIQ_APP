@@ -23,7 +23,7 @@ const ProjectSidebar = () => {
         { title: 'Budget', icon: SettingsIcon, url: `/projectsDetail?id=${projectId}&tab=settings` },
         { title: 'Resources', icon: SettingsIcon, url: `/projectsDetail?id=${projectId}&tab=settings` },        
         { title: 'Revnue Planning', icon: SettingsIcon, url: `/projectsDetail?id=${projectId}&tab=settings` },
-        { title: 'Gantt', icon: SettingsIcon, url: `/Gantt?id=${projectId}&tab=settings` },
+        { title: 'Resource Planning', icon: SettingsIcon, url: `/projectsDetail?id=${projectId}&tab=settings` },
         
     ];
 
