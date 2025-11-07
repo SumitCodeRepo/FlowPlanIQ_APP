@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
 import { UsersIcon, Search, UserPlus, Shield, Activity } from "lucide-react";
-import InviteMemberDialog from "../components/InviteMemberDialog";
 import { useSelector } from "react-redux";
-
-import { selectIsDarkTheme  } from '../features/themeSlice'
-
-import { Gantt as GtControl,Willow ,WillowDark } from "@svar-ui/react-gantt";
+import InviteMemberDialog from "../components/InviteMemberDialog";
+import { Gantt as GtControl} from "@svar-ui/react-gantt";
 import {SVARThemeWrapper} from '../features/SVARThemeWrapper'
 import "@svar-ui/react-gantt/all.css";
 
